@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <link rel="stylesheet" href="filter.css">
+</head>
+<body>
+   <img src="filter_image.png" alt="" class="imag">
+    <div class="filter-box">
+        <h3>Filter Options</h3>
+        <div class="filter-option">
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="all">All Genders</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+            <label for="house">House:</label>
+            <select id="house">
+                <option value="all">All Houses</option>
+                <option value="Gryffindor">Gryffindor</option>
+                <option value="Slytherin">Slytherin</option>
+                <option value="Hufflepuff">Hufflepuff</option>
+                <option value="Ravenclaw">Ravenclaw</option>
+            </select><br><br>
+            <label for="wandcore">Wands:</label>
+            <select id="wandcore">
+                <option value='all'>All Wands </option>
+                <option value="dragon heartstring">Dragon Heartstring</option>
+                <option value="phoenix tail feather">Phoenix Tail Feather</option>
+                <option value="unicorn tail hair">Unicorn Tail Hair</option>
+            </select>
+        </div>
+        <div class="filter-option">
+            <label for="hogwarts-student-select">Hogwarts Student:</label>
+            <button id="hogwarts-student-button" class="toggle-button">Toggle</button><br><br>
+            <label for="hogwarts-staff-select">Hogwarts Staff:</label>
+            <button id="hogwarts-staff-button" class="toggle-button">Toggle</button>
+        </div>
+        <button id="filter-button">Apply Filter</button>
+    </div>
+
+    <div class="characters-container" id="characters-list"></div>
+
+    <script src="filter.js"></script>
+</body>
+</html>
